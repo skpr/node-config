@@ -1,4 +1,4 @@
-import {skprConfig} from "../index"
+import skprConfig from "../index"
 
 test('loads config', () => {
     let config = skprConfig(__dirname + '/fixtures/config.json')
