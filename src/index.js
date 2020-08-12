@@ -5,7 +5,7 @@ function convertToEnvVarName(key) {
   return key.replace(/[^A-Za-z0-9 ]/g, '_').toUpperCase();
 }
 
-// Loads the skpr config into and object.
+// Loads the skpr config into an object.
 function load(path = '/etc/skpr/data/config.json') {
   const data = fs.readFileSync(path, 'utf-8');
   const config = JSON.parse(data);
