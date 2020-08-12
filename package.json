@@ -1,0 +1,27 @@
+{
+  "name": "@skpr/config",
+  "version": "0.0.1",
+  "description": "A simple utility for reading skpr config",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skpr/node-config.git"
+  },
+  "keywords": [
+    "skpr"
+  ],
+  "author": "Kim Pepper",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/skpr/node-config/issues"
+  },
+  "homepage": "https://github.com/skpr/node-config#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.3.0"
+  }
+}
