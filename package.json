@@ -2,9 +2,11 @@
   "name": "@skpr/config",
   "version": "0.0.1",
   "description": "A simple utility for reading skpr config",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src/**/*.js -f pretty",
+    "fix": "eslint src/**/*.js -f pretty --fix"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,16 @@
   "devDependencies": {
     "@babel/preset-env": "^7.11.0",
     "babel-jest": "^26.3.0",
-    "jest": "^26.3.0"
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-formatter-pretty": "^4.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "jest": "^26.3.0",
+    "prettier": "^2.0.5"
   }
 }
