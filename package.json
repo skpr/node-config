@@ -1,39 +1,21 @@
 {
   "name": "@skpr/config",
-  "version": "0.0.1",
-  "description": "A simple utility for reading skpr config",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "jest",
-    "lint": "eslint src/**/*.js -f pretty",
-    "fix": "eslint src/**/*.js -f pretty --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skpr/node-config.git"
-  },
-  "keywords": [
-    "skpr"
-  ],
-  "author": "Kim Pepper",
+  "version": "1.0.0",
+  "description": "Skpr config loader that reloads only when /etc/skpr/data/config.json changes",
+  "author": "Nick Schuch",
   "license": "GPL-2.0-or-later",
-  "bugs": {
-    "url": "https://github.com/skpr/node-config/issues"
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs",
+      "types": "./index.d.ts"
+    }
   },
-  "homepage": "https://github.com/skpr/node-config#readme",
-  "devDependencies": {
-    "@babel/preset-env": "^7.11.0",
-    "babel-jest": "^26.3.0",
-    "eslint": "^7.6.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-formatter-pretty": "^4.0.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.5",
-    "eslint-plugin-react-hooks": "^4.0.8",
-    "jest": "^26.3.0",
-    "prettier": "^2.0.5"
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "engines": {
+    "node": ">=16"
   }
 }
